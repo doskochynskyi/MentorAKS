@@ -1,3 +1,9 @@
+app:
+  # app.name -- Application name: Can be consistent between tracks. (required)
+  name: nodemnt
+  # app.version -- Application version: Unique tag for this release. (required)
+  version: v1.0
+
 
 service:
   # service.port -- Kubernetes service port.
