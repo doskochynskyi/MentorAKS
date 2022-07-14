@@ -44,7 +44,7 @@ env:
   RESOURCE_GROUP: "RGContainer"
   CLUSTER_NAME: "AKSmnt"
   IMAGE_PULL_SECRET_NAME: "your-image-pull-secret-name"
-  CHART_PATH: ".charts/app/"
+  CHART_PATH: "./charts/app/"
   CHART_OVERRIDE_PATH: "./values-dev.yaml"
   PROJECT_NAME: "node-docker-mnt"              # set this to your project's name
   REGISTRY_URL: "acrmnt.azurecr.io"              # set this to the URL of your registry
