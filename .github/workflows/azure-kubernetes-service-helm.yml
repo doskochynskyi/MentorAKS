@@ -86,6 +86,7 @@ jobs:
         overrideFiles: ${{ env.CHART_OVERRIDE_PATH }}
         overrides: |     
           replicas:2
+          image: ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.PROJECT_NAME }}:${{ env.DOCKER_TAG }}
         helm-version: 'latest' 
       id: bake
 
