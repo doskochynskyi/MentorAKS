@@ -4,6 +4,12 @@ app:
   # app.version -- Application version: Unique tag for this release. (required)
   version: v1.0
 
+image:
+  # image.repository -- Docker image repository.
+  repository: acrmnt.azurecr.io/node-docker-mnt
+  # image.tag -- Docker image tag.
+  tag: 351b9f67
+
 
 service:
   # service.port -- Kubernetes service port.
