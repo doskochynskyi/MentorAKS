@@ -16,4 +16,6 @@ service:
   port: 80
   # service.internalPort -- Deployment internal port.
   internalPort: 3000
+  # service.type -- Kubernetes service type.
+  type: NodePort
 
