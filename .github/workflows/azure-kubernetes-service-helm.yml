@@ -83,9 +83,10 @@ jobs:
       with:
         renderEngine: 'helm'
         helmChart: ${{ env.CHART_PATH }}
-        overrideFiles: ${{ env.CHART_OVERRIDE_PATH }}
-        release-name: nodemntrelease
+        overrideFiles: ${{ env.CHART_OVERRIDE_PATH }}        
         overrides: |     
+          name: 'nodemntrelease'
+          namespace: 'ingress-basic'
           replicas:2          
         helm-version: 'latest' 
       id: bake
