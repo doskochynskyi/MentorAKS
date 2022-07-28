@@ -48,7 +48,7 @@ env:
   CHART_OVERRIDE_PATH: "./values-dev.yaml"
   PROJECT_NAME: "node-docker-mnt"              # set this to your project's name
   REGISTRY_URL: "acrmnt.azurecr.io"              # set this to the URL of your registry
-  DOCKER_TAG: "351b9f67"
+  DOCKER_TAG: "8c1f890b"
 
 jobs:
   build:
