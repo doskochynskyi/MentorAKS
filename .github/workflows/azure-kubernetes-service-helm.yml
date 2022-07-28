@@ -83,7 +83,9 @@ jobs:
       with:
         renderEngine: 'helm'
         helmChart: ${{ env.CHART_PATH }}
-        overrideFiles: ${{ env.CHART_OVERRIDE_PATH }}        
+        overrideFiles: ${{ env.CHART_OVERRIDE_PATH }} 
+        releaseName: 'mntdevga'
+        namespace: 'dev'
         overrides: |     
           #name: 'nodemntrelease'
           #namespace: 'ingress-basic'
