@@ -9,7 +9,7 @@ image:
   # image.repository -- Docker image repository.
   repository: acrmnt.azurecr.io/node-docker-mnt
   # image.tag -- Docker image tag.
-  tag: 351b9f67
+  tag: 8c1f890b
 
 
 service:
