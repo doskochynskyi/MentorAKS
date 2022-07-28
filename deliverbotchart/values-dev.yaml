@@ -1,0 +1,40 @@
+app:
+  # app.name -- Application name: Can be consistent between tracks. (required)
+  name: nodemnt
+  fullname: nodemntfull
+  # app.version -- Application version: Unique tag for this release. (required)
+  version: v1.0
+
+image:
+  # image.repository -- Docker image repository.
+  repository: acrmnt.azurecr.io/node-docker-mnt
+  # image.tag -- Docker image tag.
+  tag: 8c1f890b
+
+
+service:
+  name: nodemntservice
+  # service.port -- Kubernetes service port.
+  port: 80
+  # service.internalPort -- Deployment internal port.
+  internalPort: 3000
+  # service.type -- Kubernetes service type.
+  type: ClusterIP
+
+
+ingress:
+  # ingress.enabled -- Enable ingress resource.
+  enabled: true
+  # ingress.annotations -- Configures annotations for the ingress.
+  annotations:
+    kubernetes.io/ingress.class: nginx 
+    # kubernetes.io/tls-acme: "true"
+    #nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    #nginx.ingress.kubernetes.io/use-regex: "true"
+    #nginx.ingress.kubernetes.io/rewrite-target: /$2
+  hosts:
+    # ingress.hosts[0].host -- Host name for routing traffic.
+    - host: nodemnt.lviv.ua
+      # ingress.hosts[0].paths -- Array of routable paths.
+      paths: ["/"]
+
