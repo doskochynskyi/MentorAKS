@@ -96,6 +96,7 @@ jobs:
     - name: Deploys application
       uses: Azure/k8s-deploy@c8fbd76ededaad2799c054a9fd5d0fa5d4e9aee4
       with:
+        echo: ${{ steps.bake.outputs.manifestsBundle }}
         manifests: ${{ steps.bake.outputs.manifestsBundle }}
         namespace: 'dev'
         images: |
