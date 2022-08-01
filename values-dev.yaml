@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: acrmnt.azurecr.io/node-docker-mnt
-  tag: "b86782a0"
+  tag: "e9684fad"
 
 deployment:
   port:3000
