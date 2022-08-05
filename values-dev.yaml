@@ -36,8 +36,7 @@ ingress:
       paths:
         - path: /
           pathType: ImplementationSpecific
-  tls: []
-    # tls
+  tls: 
     - secretName: jsmnt-dev-tls
       hosts:
         - jsmnt-dev.westeurope.cloudapp.azure.com
